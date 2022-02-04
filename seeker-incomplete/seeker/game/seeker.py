@@ -21,7 +21,7 @@ class Seeker:
         Args:
             self (Seeker): An instance of Seeker.
         """
-        self._location = random.randint(1, 1000)
+        self._location = random.randint(1, 100)
             
     def get_location(self):      
     # 3) Create the get_location(self) method. Use the following method comment.

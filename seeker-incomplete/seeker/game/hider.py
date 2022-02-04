@@ -16,7 +16,7 @@ class Hider:
         Args:
             self (Hider): An instance of Hider.
         """
-        self._location = random.randint(1, 10)
+        self._location = random.randint(1, 100)
         self._distance = [0, 0] # start with two so get_hint always works
     
     def get_hint(self):
