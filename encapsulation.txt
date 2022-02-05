@@ -1,0 +1,30 @@
+What is encapsulation and why is it important?
+
+Encapsulation is the action of surrounding something as if it were in a capsule. 
+It is hiding the pieces of something so that other methods or classes can't see or 
+operate them. Like in this image over here: 
+
+def _do_outputs(self):
+        """Provides a hint for the seeker to use.
+
+        Args:
+            self (Director): An instance of Director.
+        """
+        hint = self._hider.get_hint()
+        self._terminal_service.write_text(hint)
+
+        if self._hider.is_found():
+            user_input = input("\nWoul you like to play again? yes/no: ")
+           
+            if user_input.lower() == "yes":
+                self._is_playing = True
+            else:
+                self._is_playing = False
+(this is an example from the "seeker" game)
+
+The variables "encapsulated" in a class will be hidden from other classes, and they 
+can be used or referenced only through the methods of their current class. I read that
+ it is also known as "data hiding".
+
+Encapsulation gives you more control over coupling in your code. It prevents other co-workers
+ from breaking changes in the code. 
